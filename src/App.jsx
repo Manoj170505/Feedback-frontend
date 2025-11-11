@@ -10,7 +10,7 @@ import PrivateRoute from "./components/PrivateRoute.jsx";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Feedback-frontend">
       <Routes>
         {/* public routes */}
         <Route path="/" element={<Login />} />

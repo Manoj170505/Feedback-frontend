@@ -5,12 +5,12 @@ import Questions from "./components/Questions.jsx";
 import Admin from "./components/Admin.jsx";
 import Adminlogin from "./components/Adminlogin.jsx";
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import PrivateRoute from "./components/PrivateRoute.jsx";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/Feedback-frontend">
+    <HashRouter basename="/Feedback-frontend">
       <Routes>
         {/* public routes */}
         <Route path="/" element={<Login />} />
@@ -42,7 +42,7 @@ const App = () => {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

@@ -10,7 +10,6 @@ import PrivateRoute from "./components/PrivateRoute.jsx";
 
 const App = () => {
   return (
-    <HashRouter>
       <Routes>
         {/* public routes */}
         <Route path="/" element={<Login />} />
@@ -42,7 +41,6 @@ const App = () => {
           }
         />
       </Routes>
-    </HashRouter>
   );
 };
 

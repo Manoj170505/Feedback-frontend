@@ -10,7 +10,7 @@ import PrivateRoute from "./components/PrivateRoute.jsx";
 
 const App = () => {
   return (
-    <HashRouter basename="/Feedback-frontend">
+    <HashRouter>
       <Routes>
         {/* public routes */}
         <Route path="/" element={<Login />} />
